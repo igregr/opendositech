@@ -182,7 +182,7 @@ bool DB::ctKartoteka()
 {
    QString command = "CREATE TABLE kartoteka ("
                                               "id_pacient INTEGER PRIMARY KEY,"
-                                              "rodne_cislo INTEGER UNIQUE,"
+                                              "rodne_cislo text UNIQUE,"
                                               "jmeno TEXT,"
                                               "prijmeni TEXT,"
                                               "pojistovna TEXT,"
@@ -255,6 +255,7 @@ bool DB::createConnection()
         return false;
     }
     if (database_exists == false) { // databaze neexistovaa, vytvarim novou
+        db.exec( "PRAGMA encoding = \"UTF-16\"" );
         if (!initDatabase()) {
             qFatal("Chyba pri inicializaci databaze");
             return false;
