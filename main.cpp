@@ -38,6 +38,9 @@ int main(int argc, char *argv[])
 {
 	QApplication app(argc, argv);
 	app.setApplicationName("OpenDositech");
+    QFont font = QApplication::font();
+    font.setPointSize(16);
+    app.setFont(font);
 
 	QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF-8"));
 

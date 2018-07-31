@@ -2,22 +2,11 @@
 #define STYLESHEET_H
 #include<QString>
 
-QString stylesheet = 
+
+QString stylesheet =
 "QWidget {"
 "	background-color:black;"
 "	color: white;"
-"}"
-"QMenuBar::item:selected {"
-"     color: yellow;"
-"}"
-"QMenuBar::item:pressed {"
-"	color: yellow;"
-"}"
-"QMenu{"
-"	border: 1px solid white;"
-"}"
-"QMenu::item:selected {"
-"	color: yellow;"
 "}"
 "QLineEdit {"
 "	border-radius: 0px;"
@@ -27,9 +16,9 @@ QString stylesheet =
 "QGroupBox#BatchInfo{"
 "     border: 1px solid red;"
 "     border-radius: 0px;"
-"	margin-top: 1.5ex; /* leave space at the top for the title */"
+"	margin-top: 2ex; /* leave space at the top for the title */"
 "	font: bold;"
-"	padding-top: 5px;"
+"	padding-top: 10px;"
 " }"
 "QGroupBox::title#BatchInfo {"
 "	subcontrol-origin: margin;"
@@ -41,9 +30,9 @@ QString stylesheet =
 "QGroupBox#RecordInfo{"
 "	border: 1px solid yellow;"
 "	border-radius: 0px;"
-"	margin-top: 1.5ex;"
+"	margin-top: 2ex;"
 "	font: bold;"
-"	padding-top: 5px;"
+"	padding-top: 10px;"
 "}"
 "QGroupBox::title#RecordInfo{"
 "	subcontrol-origin: margin;"
@@ -53,9 +42,9 @@ QString stylesheet =
 "QGroupBox#Vykony{"
 "	border: 1px solid yellow;"
 "	border-radius: 0px;"
-"	margin-top: 1.5ex;"
+"	margin-top: 2ex;"
 "	font: bold;"
-"	padding-top: 5px;"
+"	padding-top: 10px;"
 "}"
 "QGroupBox::title#Vykony{"
 "	subcontrol-origin: margin;"
@@ -92,4 +81,3 @@ QString stylesheet =
 
 ;
 #endif
-

@@ -20,8 +20,8 @@ MainWindow::MainWindow()
 		QMessageBox::critical(this, tr("Chyba!"), tr("Nepodařilo se zpracovat soubor config.xml"), QMessageBox::Close );
 	}
 	
-	resize(800, 600);
-	setMinimumSize (700, 450);
+	resize(1000, 700);
+	setMinimumSize (800, 600);
 	centralWidget = new QWidget();
 	setCentralWidget(centralWidget);
 	centralWLayout = new QGridLayout(centralWidget);
