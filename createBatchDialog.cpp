@@ -401,11 +401,11 @@ QString CreateBatchDialog::createVetaVykony(QString datum, QString kod, QString 
 //	 VDIA | C | 5   | 18    |Diagnóza – je-li uvedena základní diagnóza, uvádí se jen u výkonů, které se k základní diagnóze ne-
 //	      |   |     |       |vztahují. Nevyplněná řádková diagnóza se považuje za diagnózu základní.
 //	------|---|-----|-------|-------------------------------------	
-//	 VBOD | N | 5   | 23    |Body za výkon – nepovinný údaj
+//	 VBOD | N | 7   | 23    |Body za výkon – nepovinný údaj
 //	------|---|-----|-------|-------------------------------------	
-//	 VTYP | C | 1   | 28    |Doplněk typu věty výkony. Rezerva, nevyplňuje se.
+//	 VTYP | C | 1   | 30    |Doplněk typu věty výkony. Rezerva, nevyplňuje se.
 //	------|---|-----|-------|-------------------------------------	
-//	delka vety 29
+//	delka vety 31
 
 	QString TYP = "V";
 	QString VDAT = datum.replace(".", "");
@@ -413,7 +413,7 @@ QString CreateBatchDialog::createVetaVykony(QString datum, QString kod, QString 
 	QString VPOC = pocet;
 	QString VODB = odb;
 	QString VDIA = appendSpace(diag, 5);
-	QString VBOD = prependSpace(body, 5);
+	QString VBOD = prependSpace(body, 7);
 	QString VTYP = " ";
 
 	QString veta = TYP + VDAT + VKOD + VPOC + VODB + VDIA + VBOD + VTYP;
@@ -493,8 +493,8 @@ QString CreateBatchDialog::createPruvodniListDavky()
 	QString DBODY = prependSpace(m_batch_info.pocet_bodu, 11);
 	QString	DFIN = "              0.00";
 	QString DDPP = getInsuranceType();
-    QString DVDR1 = "01:6.2.33    ";
-    QString DVDR2 = "03:6.2.33    ";
+    QString DVDR1 = "01:6.2.36    ";
+    QString DVDR2 = "03:6.2.36    ";
 	QString DDTYP = " ";
 
 	QString command = QString("UPDATE seznam_davek SET rok = '%1', mesic = '%2' WHERE id_davky='%3'").arg(DROK,DMES,m_batch_info.id_davky);

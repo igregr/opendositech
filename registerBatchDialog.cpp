@@ -190,7 +190,7 @@ QString RegisterBatchDialog::createPruvodniList(QString cislo_davky)
 	QString DBODY = "          0";
 	QString	DFIN = "              0.00";
 	QString DDPP = "1";
-    QString DVDR1 = "80:6.2.33    ";
+    QString DVDR1 = "80:6.2.36    ";
     QString DVDR2 = "             ";
 	QString DDTYP = " ";
 
