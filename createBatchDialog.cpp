@@ -493,8 +493,8 @@ QString CreateBatchDialog::createPruvodniListDavky()
 	QString DBODY = prependSpace(m_batch_info.pocet_bodu, 11);
 	QString	DFIN = "              0.00";
 	QString DDPP = getInsuranceType();
-    QString DVDR1 = "01:6.2.36    ";
-    QString DVDR2 = "03:6.2.36    ";
+    QString DVDR1 = "01:6.2.37    ";
+    QString DVDR2 = "03:6.2.37    ";
 	QString DDTYP = " ";
 
 	QString command = QString("UPDATE seznam_davek SET rok = '%1', mesic = '%2' WHERE id_davky='%3'").arg(DROK,DMES,m_batch_info.id_davky);
